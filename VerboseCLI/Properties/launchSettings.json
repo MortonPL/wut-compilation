@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "VerboseCLI": {
+      "commandName": "Project",
+      "commandLineArgs": "-f test.verbose"
+    }
+  }
+}

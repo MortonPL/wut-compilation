@@ -1,0 +1,14 @@
+<locale name="pl-pl">
+  <UnknownLTU>Nieznane LTU!!!</UnknownLTU>
+  <LTU name="UnknownEntry">Nieznany wpis lokalizacji!!!</LTU>
+  <LTU name="LOGInitialized">{0} Inicjalizowanie CLI interpretera Verbose...</LTU>
+  <LTU name="ERRNumOverflow">[VE01] @ {0}: Przepełnienie stałej liczbowej!</LTU>
+  <LTU name="ERRNumNotDecimal">[VE02] @ {0}: Niedokończona liczba zmiennoprzecinkowa {1}!</LTU>
+  <LTU name="ERRNumNotInBase">[VE03] @ {0}: Niedokończona liczba w podanej bazie {1}!</LTU>
+  <LTU name="ERRTextTooBig">[VE04] @ {0}: Długość stałej tekstowej jest powyżej limitu {2} znaków!</LTU>
+  <LTU name="ERRTextSuddenEnd">[VE05] @ {0}: Kod zakończył się niedomkniętą stałą tekstową!</LTU>
+  <LTU name="ERRCommentTooBig">[VE06] @ {0}: Długość komentarza jest powyżej limitu {2} znaków!</LTU>
+  <LTU name="ERRCommentSuddenEnd">[VE07] @ {0}: Kod zakończył się niedomkniętym komentarzem!</LTU>
+  <LTU name="ERRIdentifierTooBig">[VE08] @ {0}: Długość identyfikatora jest powyżej limitu {2} znaków!</LTU>
+  <LTU name="ERRUnknownEscape">[VE09] @ {0}: Nierozpoznana sekwencja ucieczki \"\\{2}\" w \"{1}\"!</LTU>
+</locale>

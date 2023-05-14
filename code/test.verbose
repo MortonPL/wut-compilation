@@ -1,0 +1,20 @@
+FUNCTION add WITH MUTABLE TEXT t RETURNS NOTHING
+BEGIN
+    t IS t ++ " ano lot";
+    CALL Print WITH {CALL First WITH t NOW} NOW;
+    CALL Print WITH {CALL Last WITH t NOW} NOW;
+    CALL Print WITH {CALL Body WITH t NOW} NOW;
+    CALL Print WITH {CALL Tail WITH t NOW} NOW;
+    MUTABLE TEXT a IS NONE;
+    MUTABLE TEXT b IS NONE;
+    CALL Split WITH t, a, b NOW;
+    CALL Print WITH a NOW;
+    CALL Print WITH b NOW;
+    CALL BackSplit WITH t, a, b NOW;
+    CALL Print WITH a NOW;
+    CALL Print WITH b NOW;
+END
+
+MUTABLE TEXT t IS "ban";
+CALL add WITH t NOW;
+CALL Print WITH t NOW;

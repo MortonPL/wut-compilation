@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ApplicationIcon />
+    <StartupObject />
+  </PropertyGroup>
+
+  <Target Name="CopyDLLs" AfterTargets="Build">
+    <Message Text="Copying VerboseCore files" Importance="High" />
+    <Copy SourceFiles="$(TargetDir)$(ProjectName).dll" DestinationFolder="$(SolutionDir)\Build" />
+  </Target>
+
+</Project>

@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <StartupObject>VerboseCLI.Program</StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\VerboseCore\VerboseCore.csproj" />
+  </ItemGroup>
+  
+  <Target Name="CopyDLLs" AfterTargets="Build">
+    <Message Text="Copying VerboseCLI files" Importance="High" />
+    <Copy SourceFiles="$(TargetDir)$(ProjectName).deps.json;$(TargetDir)$(ProjectName).dll;$(TargetDir)$(ProjectName).exe;$(TargetDir)$(ProjectName).runtimeconfig.dev.json;$(TargetDir)$(ProjectName).runtimeconfig.json;" DestinationFolder="$(SolutionDir)\Build" />
+    <Copy SourceFiles="$(ProjectDir)locale_pl-pl.xml;$(SolutionDir)\code\test.verbose" DestinationFolder="$(SolutionDir)\Build" />
+    <Copy SourceFiles="$(ProjectDir)locale_pl-pl.xml;$(SolutionDir)\code\test.verbose" DestinationFolder="$(TargetDir)" />
+  </Target>
+
+</Project>
